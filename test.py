@@ -2,6 +2,7 @@ import cv2
 import numpy as np
 import argparse
 import sys
+# hey I chanced that part
 
 
 
@@ -46,7 +47,7 @@ def display1():
     #this is for videosi video must be in current directory.
     vcap = cv2.VideoCapture("test1.mp4")
     # this line is to capture from camera (in our case it is specified as 0). There is 2 lines to comment out for having this work properly.
-    #vcap = cv2.VideoCapture(0)
+    vcap = cv2.VideoCapture(0)
 
     # gets the given values.
     frameWidth, frameHeight, fps = parameters(vcap)#-------------Comment it out if you use the camera of the drone---------------------
